@@ -87,11 +87,11 @@ wizLoader = (function() {
         sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
         gridId: "2"
       },
-      normal: {
-        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
-        gridId: "2"
-      },
       sort: {
+        sheedId: "1KyjKLU8ADJuXWoML_rIlV4_Iuq-I1-ffdJoFIJh-XRE",
+        gridId: "od6"
+      },
+      qtemulti: {
         sheedId: "1Bc8YBk8Ft7r1NLlnnPhqENcF-_Sqgxi_dkOMUTwi9R0",
         gridId: "ott9syt"
       },
@@ -124,8 +124,8 @@ wizLoader = (function() {
       if (tmp[6] === 'o2cw2x5') {
         return this._loadNormal([data.feed.entry, '填空題']);
       }
-      if (tmp[6] === 'op44ln6') {
-        return this._loadNormal([data.feed.entry, '連連看']);
+      if (tmp[6] === 'od6') {
+        return this._loadNormal([data.feed.entry, '排序題']);
       }
       if (tmp[6] === 'ott9syt') {
         return this._loadNormal([data.feed.entry, 'QTE複選題']);
@@ -163,7 +163,7 @@ wizLoader = (function() {
           if (name === '填空題') {
             tmp['type'] = '填空題';
           }
-          if (name === '連連看') {
+          if (name === '排序題') {
             tmp['type'] = '連連看';
           }
           if (name === 'QTE複選題') {
