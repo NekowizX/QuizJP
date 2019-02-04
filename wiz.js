@@ -164,7 +164,7 @@ wizLoader = (function() {
             tmp['type'] = '填空題';
           }
           if (name === '排序題') {
-            tmp['type'] = '連連看';
+            tmp['type'] = '排序題';
           }
           if (name === 'QTE複選題') {
             tmp['type'] = 'QTE複選題';
