@@ -133,7 +133,7 @@ wizLoader = (function() {
       if (tmp[6] === 'ood9bzs') {
         return this._loadNormal([data.feed.entry, 'OX題']);
       }
-      return this._loadNormal([data.feed.entry, 'QTE填空']);
+      return this._loadNormal([data.feed.entry, 'QTE填空題']);
     }
   };
 
@@ -172,8 +172,8 @@ wizLoader = (function() {
           if (name === 'OX題') {
             tmp['type'] = 'OX題';
           }
-          if (name === 'QTE填空') {
-            tmp['type'] = 'QTE填空';
+          if (name === 'QTE填空題') {
+            tmp['type'] = 'QTE填空題';
           }
           tmp['fulltext'] = ("" + tmp['question'] + tmp['answer']).toLowerCase();
           db.push(tmp);
