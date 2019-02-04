@@ -89,7 +89,7 @@ wizLoader = (function() {
       },
       sort: {
         sheedId: "1KyjKLU8ADJuXWoML_rIlV4_Iuq-I1-ffdJoFIJh-XRE",
-        gridId: "od6"
+        gridId: "obmhfwa"
       },
       qtemulti: {
         sheedId: "1Bc8YBk8Ft7r1NLlnnPhqENcF-_Sqgxi_dkOMUTwi9R0",
@@ -124,7 +124,7 @@ wizLoader = (function() {
       if (tmp[6] === 'o2cw2x5') {
         return this._loadNormal([data.feed.entry, '填空題']);
       }
-      if (tmp[6] === 'od6') {
+      if (tmp[6] === 'obmhfwa') {
         return this._loadNormal([data.feed.entry, '排序題']);
       }
       if (tmp[6] === 'ott9syt') {
