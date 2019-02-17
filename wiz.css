@@ -21,6 +21,10 @@ html {
   color: #FFF;
   background-color: #F0D4D4; }
 
+#page-menu {
+    margin-top: 20px;
+}
+
 #overlay-loading {
   position: fixed;
   top: 0;
