@@ -79,14 +79,6 @@ wizLoader = (function() {
 
   wizLoader.option = {
     excelIds: {
-     classify: {
-        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
-        gridId: "2"
-      },
-      fill: {
-        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
-        gridId: "2"
-      },
       sort: {
         sheedId: "1KyjKLU8ADJuXWoML_rIlV4_Iuq-I1-ffdJoFIJh-XRE",
         gridId: "obmhfwa"
@@ -118,12 +110,6 @@ wizLoader = (function() {
     var tmp;
     tmp = data.feed.id.$t.split('/');
     if (tmp.length === 9) {
-      if (tmp[6] === 'os8hyc1') {
-        return this._loadNormal([data.feed.entry, '分類題']);
-      }
-      if (tmp[6] === 'o2cw2x5') {
-        return this._loadNormal([data.feed.entry, '填空題']);
-      }
       if (tmp[6] === 'obmhfwa') {
         return this._loadNormal([data.feed.entry, '排序題']);
       }
@@ -157,12 +143,6 @@ wizLoader = (function() {
         }
         tmp[keys[col]] = entry.content.$t;
         if (col === 3) {
-          if (name === '分類題') {
-            tmp['type'] = '分類題';
-          }
-          if (name === '填空題') {
-            tmp['type'] = '填空題';
-          }
           if (name === '排序題') {
             tmp['type'] = '排序題';
           }
